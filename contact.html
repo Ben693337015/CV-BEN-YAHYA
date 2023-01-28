@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Mon cv en ligne</title>
+        <meta charset="utf-8">
+        <meta name =viewport content="width=device-width ,initial-scale=1.0">
+        <link  rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> ABDOULMADJID BEN YAHYA </h1>
+        </header>
+        <nav>
+            <div class="table">
+                <ul>
+                    <li class="ind"><a href="index.html">Acceil</a></li>
+                    <li class="exp"><a href="exp pro.html">Experiences professionnelles</a></li>
+                    <li class="hob"><a href="hobis.html">Loissirs</a></li>
+                    <li class="con"><a href="contact.html">Contactez moi !!</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>formulaire </h1>
+        <form method="post" action="traitement.php">
+            <label for="prenom">Entrez votrez prenom</label>
+            <input type="text" id="prenom" name="prenom" autocomplete="on" placeholder="Ex:Abdoulmadjid" required="required"><br>
+            <label for="nb">choisisez un nombre de 1-10</label>
+            <input type="number" id="nb" name="nombre" min="1" max="10"><br>
+            <label for="nom">Votre nom:</label>
+            <input type="text" name="nom" id="nom" autofocus="autofocus"><br>
+
+            homme ou femme ?
+            <input type="radio" id="homme" name="sexe" value="homme" checked="checked">
+            <label for="homme">un homme</label><br>
+            <input type="radio" id="femme" name="sexe" value="femme">
+            <label for="femme">une femme</label><br>
+
+            Quel(s) sport(s) pratique vous ?
+            <input type="checkbox" id="nata" name="sport" value="nata" checked="checked">
+            <label for="nata">Natation</label>
+            <input type="checkbox" id="nata" name="sport" value="nata">
+            <label for="nata">football</label><br>
+            où habitez vous ?<br>
+            <select name="pays">
+                <optgroup label="Afrique">
+                <option value="cameroun" selected="selected">cameroun</option>
+                <option value="Nigeria">Nigeria</option>
+                </optgroup>
+                <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="Quarar">Quatar</option>
+                    <option value="Arabie saoudie">Arabie saoudie</option>
+                </optgroup>
+            </select><br>
+
+            
+
+            <input type="submit" value="envoyer">
+        </form>
+        <footer>
+            <p>copyright-2022 Abdoulmadjid </p>
+        </footer>
+    </body>
+</html>
