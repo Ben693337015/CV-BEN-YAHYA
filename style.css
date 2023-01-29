@@ -111,4 +111,9 @@ img{
     nav li:hover a{
         padding: 5px 10px 10px 10px;
     }
+    img{
+        width: 80%;
+        height: 60%;
+        
+    }
 }
